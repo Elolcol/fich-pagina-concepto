@@ -1,0 +1,32 @@
+---
+import Logo from "../assets/Logo.astro";
+---
+
+<header>
+  <Logo />
+  <nav>
+    <button>Institucional</button>
+    <button>Estudios</button>
+    <button>Investigación</button>
+    <button>Extensión</button>
+    <button>Transferencia</button>
+  </nav>
+</header>
+
+<style>
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    height: 80px;
+    background-color: var(--foreground-color);
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+</style>

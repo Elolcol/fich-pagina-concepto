@@ -1,0 +1,45 @@
+---
+import Chevron from "../assets/Chevron.astro";
+---
+
+<section>
+  <button><Chevron /></button>
+  <article>
+    <img
+      src="https://datauniversitaria.com.ar/wp-content/uploads/2020/01/UNL-FICH.jpg"
+      alt=""
+    />
+  </article>
+  <button><Chevron /></button>
+</section>
+
+<style>
+  section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+    height: 550px;
+
+    article {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      background-color: var(--foreground-color);
+      border-radius: 20px;
+      height: 100%;
+      width: 100%;
+
+      img {
+        overflow: hidden;
+        object-fit: cover;
+        border-radius: 15px;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+</style>

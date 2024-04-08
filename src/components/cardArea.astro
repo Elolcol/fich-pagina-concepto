@@ -1,0 +1,46 @@
+---
+interface Props {
+  title: string;
+  body: string;
+  href: string;
+  image: string;
+}
+
+const { href, title, body, image } = Astro.props;
+---
+
+<a href={href}>
+  <h2>
+    {title}
+  </h2>
+  <img src={image} width="220" height="170" alt="imagen" />
+  <p>
+    {body}
+  </p>
+</a>
+
+<style>
+  a {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: start;
+    padding: 15px 15px;
+    height: fit-content;
+    width: fit-content;
+    min-height: 50px;
+    border-radius: 20px;
+    background-color: var(--foreground-color);
+
+    img {
+      border-radius: 10px;
+    }
+  }
+
+  a:hover {
+    background-color: var(--hover-color);
+  }
+</style>
