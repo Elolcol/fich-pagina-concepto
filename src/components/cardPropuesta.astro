@@ -28,11 +28,13 @@ const { href, title, image } = Astro.props;
     height: fit-content;
     width: fit-content;
     min-height: 50px;
+    min-width: 50px;
     border-radius: 20px;
     background-color: var(--foreground-color);
 
     img {
       border-radius: 10px;
+      object-fit: cover;
     }
   }
 

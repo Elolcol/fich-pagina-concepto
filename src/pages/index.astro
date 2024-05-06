@@ -5,13 +5,93 @@ import CardArea from "../components/cardArea.astro";
 import CardFich from "../components/cardFich.astro";
 import CardPages from "../components/cardPages.astro";
 import CardPropuesta from "../components/cardPropuesta.astro";
+import CardAgenda from "../components/cardAgenda.astro";
+import CardNoticia from "../components/cardNoticia.astro";
 import Hero from "../components/Hero.astro";
+import Chevron from "../assets/Chevron.astro";
 ---
 
 <Layout>
   <Hero />
   <CardPages title="INGRESO 2025" href="" />
+  <section class="noticias">
+    <h2>Noticias UNL</h2>
+    <div>
+      <CardNoticia
+        date="22 Agosto 2022"
+        body="Reconocimiento de la mejor carrera de la UNL"
+        href=""
+        image="https://www.fich.unl.edu.ar/wp-content/uploads/2017/10/posgrado-300x300.png"
+      />
+      <CardNoticia
+        date="22 Agosto 2022"
+        body="Reconocimiento de la mejor carrera de la UNL"
+        href=""
+        image="https://www.fich.unl.edu.ar/wp-content/uploads/2017/10/posgrado-300x300.png"
+      />
+      <CardNoticia
+        date="22 Agosto 2022"
+        body="Reconocimiento de la mejor carrera de la UNL"
+        href=""
+        image="https://www.fich.unl.edu.ar/wp-content/uploads/2017/10/posgrado-300x300.png"
+      />
+      <CardNoticia
+        date="22 Agosto 2022"
+        body="Reconocimiento de la mejor carrera de la UNL"
+        href=""
+        image="https://www.fich.unl.edu.ar/wp-content/uploads/2017/10/posgrado-300x300.png"
+      />
+      <CardNoticia
+        date="22 Agosto 2022"
+        body="Reconocimiento de la mejor carrera de la UNL"
+        href=""
+        image="https://www.fich.unl.edu.ar/wp-content/uploads/2017/10/posgrado-300x300.png"
+      />
+    </div>
+  </section>
   <CardPages title="POSGRADO" href="" />
+  <section class="agenda">
+    <h2>Agenda UNL</h2>
+    <div>
+      <button><Chevron /></button>
+      <CardAgenda
+        date="22 Agosto"
+        time="10:00"
+        body="Reconocimiento de la mejor carrera de la UNL"
+        href=""
+        image="https://www.fich.unl.edu.ar/wp-content/uploads/2017/10/posgrado-300x300.png"
+      />
+      <CardAgenda
+        date="22 Agosto"
+        time="10:00"
+        body="Reconocimiento de la mejor carrera de la UNL"
+        href=""
+        image="https://www.fich.unl.edu.ar/wp-content/uploads/2017/10/posgrado-300x300.png"
+      />
+      <CardAgenda
+        date="22 Agosto"
+        time="10:00"
+        body="Reconocimiento de la mejor carrera de la UNL"
+        href=""
+        image="https://www.fich.unl.edu.ar/wp-content/uploads/2017/10/posgrado-300x300.png"
+      />
+      <CardAgenda
+        date="22 Agosto"
+        time="10:00"
+        body="Reconocimiento de la mejor carrera de la UNL"
+        href=""
+        image="https://www.fich.unl.edu.ar/wp-content/uploads/2017/10/posgrado-300x300.png"
+      />
+      <CardAgenda
+        date="22 Agosto"
+        time="10:00"
+        body="Reconocimiento de la mejor carrera de la UNL"
+        href=""
+        image="https://www.fich.unl.edu.ar/wp-content/uploads/2017/10/posgrado-300x300.png"
+      />
+      <button><Chevron /></button>
+    </div>
+  </section>
   <CardPages title="GRADUADOS" href="" />
   <section class="propuestas">
     <h2>Propuesta Academica</h2>
@@ -19,19 +99,19 @@ import Hero from "../components/Hero.astro";
       <CardPropuesta
         title="PREGRADO"
         href=""
-        image="https://i.pinimg.com/564x/68/dd/94/68dd9494155a73631be0b321114b8b86.jpg"
+        image="https://www.fich.unl.edu.ar/wp-content/uploads/2017/10/grado-300x300.png"
       /><CardPropuesta
         title="GRADO"
         href=""
-        image="https://i.pinimg.com/564x/68/dd/94/68dd9494155a73631be0b321114b8b86.jpg"
+        image="https://www.fich.unl.edu.ar/wp-content/uploads/2017/10/grado-2-300x300.png"
       /><CardPropuesta
         title="POSGRADO"
         href=""
-        image="https://i.pinimg.com/564x/68/dd/94/68dd9494155a73631be0b321114b8b86.jpg"
+        image="https://www.fich.unl.edu.ar/wp-content/uploads/2017/10/posgrado-2-300x300.png"
       /><CardPropuesta
         title="DISTANCIA"
         href=""
-        image="https://i.pinimg.com/564x/68/dd/94/68dd9494155a73631be0b321114b8b86.jpg"
+        image="https://www.fich.unl.edu.ar/wp-content/uploads/2017/10/distancia-300x300.png"
       />
     </div>
   </section>
@@ -43,42 +123,45 @@ import Hero from "../components/Hero.astro";
         title="ACOFICH"
         body="Asociacion cooperadora"
         href=""
-        image="https://i.pinimg.com/564x/68/dd/94/68dd9494155a73631be0b321114b8b86.jpg"
+        image="https://www.fich.unl.edu.ar/wp-content/uploads/2022/09/acofich-1024x1024.png"
       /><CardArea
         title="CIM"
         body="Informacion meteorologica"
-        href=""
-        image="https://i.pinimg.com/564x/68/dd/94/68dd9494155a73631be0b321114b8b86.jpg"
+        href="https://fich.unl.edu.ar/cim/"
+        image="https://www.fich.unl.edu.ar/wp-content/uploads/2022/09/CIM-1024x768.jpg"
       /><CardArea
         title="Arg Cap-Net"
         body="Red de capacitacion"
-        href=""
-        image="https://i.pinimg.com/564x/68/dd/94/68dd9494155a73631be0b321114b8b86.jpg"
+        href="https://www.argcapnet.org.ar/"
+        image="https://www.fich.unl.edu.ar/wp-content/uploads/2022/09/AGUA-1024x640.png"
       /><CardArea
         title="Catedra UNESCO"
         body="En Agua y Educacion"
-        href=""
-        image="https://i.pinimg.com/564x/68/dd/94/68dd9494155a73631be0b321114b8b86.jpg"
+        href="https://www.fich.unl.edu.ar/catedra-unesco/"
+        image="https://www.fich.unl.edu.ar/wp-content/uploads/2022/08/UNESCO-1024x1024.png"
       />
     </div>
   </section>
   <section class="cards">
-    <CardFich title="INFO FICH" href="" />
-    <CardFich title="E-FICH" href="" />
+    <CardFich title="INFO FICH" href="http://infofich.unl.edu.ar/login" />
+    <CardFich
+      title="E-FICH"
+      href="http://e-fich.unl.edu.ar/moodle/entrar.php"
+    />
   </section>
   <section class="cards">
     <Card
-      title="biblioteca"
+      title="Biblioteca"
       body="La Biblioteca Centralizada Dr. Ezio Emiliani unifica el acervo de las bibliotecas de FICH, FBCB, ESS y FCM."
-      href=""
+      href="http://www.bibliotecas.unl.edu.ar/biblioteca-centralizada-dr-ezio-emiliani-fbcb-fich-fcm-ess/"
     /><Card
       title="SIU-Guarani GRADO"
       body="Sistema que registra y administra todas las actividades académicas de las y los estudiantes de grado."
-      href=""
+      href="https://servicios.unl.edu.ar/guarani3/autogestion/"
     /><Card
       title="SIU-Guarani POSGRADO"
       body="Sistema que registra y administra todas las actividades académicas de las y los estudiantes de posgrado."
-      href=""
+      href="https://servicios.unl.edu.ar/fich_posgrado/?__o="
     /><Card
       title="Directorio Telefonico"
       body="Datos de contacto de oficinas administrativas, de gestión, docencia e investigación de la facultad."
@@ -86,7 +169,7 @@ import Hero from "../components/Hero.astro";
     /><Card
       title="Portal de Autogestion"
       body="Permite al personal docente y no docente de la UNL realizar trámites, como la obtención de recibos de haberes."
-      href=""
+      href="https://servicios.unl.edu.ar/autogestion/"
     /><Card
       title="Guia de Tramites"
       body="Trámites más frecuentes que deben realizar docentes, nodocentes, estudiantes y graduados de la facultad."
@@ -97,7 +180,47 @@ import Hero from "../components/Hero.astro";
 </Layout>
 
 <style>
+  .agenda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+    padding: 15px;
+    gap: 15px;
+    width: 100%;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      width: 100%;
+
+      button:first-child {
+        transform: rotate(180deg);
+      }
+    }
+  }
   .propuestas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+    padding: 15px;
+    gap: 15px;
+    width: 100%;
+
+    div {
+      display: flex;
+      gap: 15px;
+    }
+  }
+  .noticias {
     display: flex;
     flex-direction: column;
     justify-content: center;
